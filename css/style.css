@@ -1,0 +1,129 @@
+:root {
+    --bs-primary: #005555;
+    --bs-secondary: #efefef;
+}
+/* Color */
+.bs-primary {
+    background: var(--bs-primary);
+}
+.bs-secondary {
+    background: var(--bs-secondary);
+}
+.text-bs-primary {
+    color: var(--bs-primary);
+}
+/* Menu */
+.bg-menu {
+    background-color: #005555;
+    padding: 20px 30px;
+}
+
+/* Thêm các style mới để căn giữa nội dung trong slider */
+.slider-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Slider */
+.item {
+    background-size: cover;
+    height: 80vh;
+}
+/* Background */
+#bg-img {
+    background-image: url('../images/hero_bg_1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+/* Card */
+.card-body hr {
+    margin: 0 auto;
+    width: -webkit-calc(100% - 2 * 60px);
+    width: calc(100% - 2 * 60px);
+}
+
+/* Pagination */
+.custom-pagination a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    border-radius: 50%;
+    background: rgba(0, 32, 74, 0.1);
+    color: #00204a;
+    text-align: center;
+}
+.custom-pagination a:hover,
+.custom-pagination a.active {
+    background: #00204a;
+    color: #fff;
+}
+/* Footer */
+.bs-secondary a:hover {
+    color: #000;
+    text-decoration: none;
+}
+/* Icons */
+.social a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #00204a;
+    border-radius: 50%;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    border: 2px solid transparent;
+    position: relative;
+    top: 0;
+}
+.social a svg {
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.social a:hover {
+    top: -5px;
+    background: transparent;
+    color: #fff;
+    background: #00204A;
+}
+.social  li  a {
+    display: inline-block;
+    position: relative;
+    background: #ccc;
+    border-radius: 40%;
+}
+.social  li  a > svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contact-info {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    background: #00204a;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #fff;
+}
